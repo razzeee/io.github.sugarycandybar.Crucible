@@ -26,6 +26,7 @@ modules:
           url: https://api.github.com/repos/ColinIanKing/stress-ng/releases/latest
           tag-query: .tag_name
           version-query: .tag_name | ltrimstr("V")
+          url-query: .tarball_url
           timestamp-query: .published_at
   - name: crucible
     buildsystem: meson
